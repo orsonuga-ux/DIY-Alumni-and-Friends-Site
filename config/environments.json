@@ -1,0 +1,10 @@
+{
+  "poc": {
+    "label": "POC Sandbox",
+    "salesforceOrgAlias": "uchicagoard-poc",
+    "experienceCloudSiteName": "AlumniAndFriends",
+    "experienceCloudUrl": "https://uchicagoard--poc.sandbox.my.site.com/AlumniAndFriends",
+    "purpose": "Primary proof-of-concept sandbox for Experience Cloud portal build and validation."
+  }
+}
+

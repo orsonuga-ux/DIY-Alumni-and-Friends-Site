@@ -54,10 +54,17 @@ Use standard Salesforce objects when they already model the business concept wel
 
 | Environment | Purpose |
 | --- | --- |
+| POC sandbox | Primary proof-of-concept build and validation environment. |
 | Developer sandbox | Isolated metadata work and component prototyping. |
 | Integration sandbox | Combined feature validation and integration testing. |
 | UAT sandbox | Stakeholder review, content manager testing, accessibility review. |
 | Production | Live portal and production publishing workflows. |
+
+## Known Experience Cloud Sites
+
+| Environment | Site | URL |
+| --- | --- | --- |
+| POC sandbox | AlumniAndFriends | https://uchicagoard--poc.sandbox.my.site.com/AlumniAndFriends |
 
 ## Integration Inventory Placeholder
 
@@ -71,4 +78,3 @@ Create one integration note per system before implementation starts:
 - Sync frequency
 - Error handling
 - Data retention and privacy constraints
-

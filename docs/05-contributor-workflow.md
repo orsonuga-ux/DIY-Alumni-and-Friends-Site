@@ -16,6 +16,8 @@ The rule of thumb: read the smallest relevant file, change the smallest owned ar
 | Brand and accessibility | `docs/04-brand-accessibility.md` |
 | Delivery planning | `docs/06-delivery-plan.md` |
 | Contributor process | `docs/05-contributor-workflow.md` |
+| Lightning Web Components | `force-app/main/default/lwc/<component-name>` plus `docs/component-contracts/<component-name>.md` |
+| Salesforce content metadata | `force-app/main/default/objects/Portal_Content__c` and `docs/03-salesforce-content-model.md` |
 
 When implementation begins, create one folder per functional area and add a local `README.md` that describes ownership, dependencies, and test commands.
 
@@ -68,4 +70,3 @@ Use clear names with stable prefixes once implementation starts:
 - Salesforce custom objects and fields: align to org convention first; otherwise use `Portal_*` for portal-owned metadata.
 - Components: use feature-based names, such as `portalContentList`, `portalFeaturedEvents`, `portalProfileSummary`.
 - Documentation: two-digit ordering for top-level docs, ADR numbering for decisions.
-

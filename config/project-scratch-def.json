@@ -1,0 +1,17 @@
+{
+  "orgName": "DIY Alumni and Friends",
+  "edition": "Enterprise",
+  "features": [
+    "Communities",
+    "Sites"
+  ],
+  "settings": {
+    "communitiesSettings": {
+      "enableNetworksEnabled": true
+    },
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    }
+  }
+}
+

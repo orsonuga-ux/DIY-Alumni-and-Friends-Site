@@ -1,0 +1,18 @@
+<template>
+    <div class="portal-home">
+        <c-portal-brand-header></c-portal-brand-header>
+
+        <main class="home-main">
+            <section class="welcome" aria-labelledby="welcome-title">
+                <p class="eyebrow">Alumni and friends</p>
+                <h1 id="welcome-title">{headline}</h1>
+                <p>{subhead}</p>
+            </section>
+
+            <section class="home-grid" aria-label="Portal highlights">
+                <c-portal-content-list use-sample-data heading="Featured for you"></c-portal-content-list>
+            </section>
+        </main>
+    </div>
+</template>
+

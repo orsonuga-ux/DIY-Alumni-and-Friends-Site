@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Content_Title__c</fullName>
+    <description>Public title displayed in portal content listings and detail views.</description>
+    <externalId>false</externalId>
+    <label>Content Title</label>
+    <length>160</length>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
+

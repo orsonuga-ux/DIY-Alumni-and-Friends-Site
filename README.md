@@ -19,6 +19,12 @@ Build an alumni and friends portal that:
 - Follows University of Chicago web brand expectations for logo usage, header/footer treatment, color, typography, and accessibility.
 - Keeps project documentation modular so future contributors can work with minimal token usage and low overwrite risk.
 
+## POC Sandbox
+
+Use the POC Experience Cloud site for sandbox validation:
+
+https://uchicagoard--poc.sandbox.my.site.com/AlumniAndFriends
+
 ## Repository Shape
 
 ```text
@@ -32,10 +38,16 @@ docs/
   06-delivery-plan.md              Phased implementation plan
   adr/                             Architecture decision records
   templates/                       Briefs and reusable planning templates
+force-app/
+  main/default/lwc/                 Experience Cloud Lightning Web Components
+  main/default/objects/             Salesforce content model metadata
+  main/default/permissionsets/      Content operations permission sets
+config/
+  project-scratch-def.json          Starter Salesforce development org shape
+  environments.json                 Known Salesforce environment URLs and aliases
 ```
 
 ## Brand Sources Checked
 
 - UChicago Website Resource Center, Web Brand Identity Guidelines: https://websites.uchicago.edu/policies-standards/web-brand-identity-guidelines/
 - UChicago Creative, Brand Identity Guidelines: https://creative.uchicago.edu/brand-identity-guidelines-3/
-

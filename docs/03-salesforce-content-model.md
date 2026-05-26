@@ -28,6 +28,24 @@ Names are placeholders until validated against existing objects and naming conve
 | `Engagement_Opportunity__c` | Structured volunteer, mentorship, and participation opportunities where Campaign is not sufficient. |
 | `Alumni_Group__c` | Affinity, regional, class, school, and interest group profiles if no existing object fits. |
 
+## Metadata Started
+
+The initial Salesforce DX scaffold includes a starter `Portal_Content__c` object under `force-app/main/default/objects/Portal_Content__c`.
+
+Implemented starter fields:
+
+- `Content_Title__c`
+- `Content_Summary__c`
+- `Content_Type__c`
+- `Status__c`
+- `Publish_Start__c`
+- `Publish_End__c`
+- `CTA_Label__c`
+- `CTA_URL__c`
+- `Image_Alt_Text__c`
+
+Treat this as a first build pass. Final API names, field types, picklist values, and page layouts should be validated against the existing Salesforce org model before production deployment.
+
 ## Core Fields for `Portal_Content__c`
 
 | Field | Type | Notes |
@@ -80,4 +98,3 @@ Each portal component should declare:
 - Accessibility requirements.
 
 Store those contracts with the component implementation once code begins.
-

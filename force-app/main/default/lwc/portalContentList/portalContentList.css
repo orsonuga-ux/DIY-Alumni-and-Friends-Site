@@ -1,0 +1,44 @@
+:host {
+    display: block;
+}
+
+.content-list {
+    color: var(--portal-color-text, #1f1f1f);
+    display: grid;
+    gap: 1.25rem;
+}
+
+.section-heading {
+    display: grid;
+    gap: 0.25rem;
+}
+
+.section-kicker {
+    color: var(--portal-color-maroon, #800000);
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: var(--portal-font-brand, Helvetica, Arial, sans-serif);
+    font-size: 1.75rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.cards {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+}
+
+.empty-state {
+    background: var(--portal-color-surface, #f7f7f7);
+    border: 1px solid var(--portal-color-border, #d6d2c4);
+    border-radius: 0.5rem;
+    margin: 0;
+    padding: 1rem;
+}
+

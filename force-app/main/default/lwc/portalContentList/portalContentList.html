@@ -1,0 +1,30 @@
+<template>
+    <section class="content-list" aria-labelledby="content-list-title">
+        <div class="section-heading">
+            <p class="section-kicker">{kicker}</p>
+            <h1 id="content-list-title">{heading}</h1>
+        </div>
+
+        <template if:true={hasRecords}>
+            <div class="cards">
+                <template for:each={records} for:item="record">
+                    <c-portal-content-card
+                        key={record.id}
+                        title={record.title}
+                        summary={record.summary}
+                        content-type={record.contentType}
+                        image-url={record.imageUrl}
+                        image-alt-text={record.imageAltText}
+                        cta-label={record.ctaLabel}
+                        cta-url={record.ctaUrl}>
+                    </c-portal-content-card>
+                </template>
+            </div>
+        </template>
+
+        <template if:false={hasRecords}>
+            <p class="empty-state">{emptyStateMessage}</p>
+        </template>
+    </section>
+</template>
+

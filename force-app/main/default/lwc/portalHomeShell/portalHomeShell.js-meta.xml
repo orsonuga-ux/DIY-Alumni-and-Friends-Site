@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>61.0</apiVersion>
+    <isExposed>true</isExposed>
+    <masterLabel>Portal Home Shell</masterLabel>
+    <description>Modern alumni portal home page shell for Experience Cloud page composition.</description>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="headline" type="String" label="Headline" default="Welcome back to UChicago"/>
+            <property name="subhead" type="String" label="Subhead" default="Discover events, stories, giving opportunities, and ways to stay connected."/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>
+

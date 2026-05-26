@@ -32,6 +32,7 @@ Acceptance criteria:
 - Portal only renders published, in-window content.
 - Header/footer treatment passes brand review.
 - Basic accessibility checks pass.
+- Foundation work is validated in the POC sandbox site: https://uchicagoard--poc.sandbox.my.site.com/AlumniAndFriends
 
 ## Phase 2: Launch Experience
 
@@ -78,4 +79,3 @@ Candidate enhancements:
 - Email marketing integration.
 - Advanced analytics.
 - Group-specific delegated content management.
-

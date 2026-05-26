@@ -13,6 +13,15 @@ This file is the navigation layer for the portal project. Keep it short. Add lin
 | [05-contributor-workflow.md](05-contributor-workflow.md) | How contributors avoid overwrites, reduce context size, and document decisions. | Everyone |
 | [06-delivery-plan.md](06-delivery-plan.md) | Phased delivery plan, milestone gates, and acceptance criteria. | Delivery lead, product, engineering |
 
+## Implementation Areas
+
+| Area | Path | Purpose |
+| --- | --- | --- |
+| Salesforce source | [../force-app](../force-app) | Salesforce DX metadata, Lightning Web Components, objects, fields, and permission sets. |
+| Component contracts | [component-contracts](component-contracts) | Small, durable contracts for Experience Cloud components. |
+| Scratch org config | [../config/project-scratch-def.json](../config/project-scratch-def.json) | Starter Salesforce development org shape. |
+| Environment registry | [../config/environments.json](../config/environments.json) | Known sandbox and site URLs used for validation. |
+
 ## Decision Records
 
 Architecture decisions live in [adr](adr). Create a new ADR when a choice changes system behavior, object ownership, security posture, integration strategy, or contributor workflow.
@@ -24,4 +33,3 @@ Current ADRs:
 ## Contribution Rule
 
 Before adding implementation files, add or update the smallest relevant planning document first. This keeps contributors aligned without requiring everyone to reread the entire workspace.
-

@@ -1,0 +1,16 @@
+<template>
+    <article class="content-card">
+        <template if:true={imageUrl}>
+            <img class="content-image" src={imageUrl} alt={imageAltText} />
+        </template>
+        <div class="content-body">
+            <p class="content-type">{contentType}</p>
+            <h2 class="content-title">{title}</h2>
+            <p class="content-summary">{summary}</p>
+            <template if:true={ctaUrl}>
+                <a class="content-action" href={ctaUrl}>{ctaLabel}</a>
+            </template>
+        </div>
+    </article>
+</template>
+

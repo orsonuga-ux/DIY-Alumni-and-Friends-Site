@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Content_Summary__c</fullName>
+    <description>Short summary displayed on portal cards and listing pages.</description>
+    <label>Content Summary</label>
+    <length>500</length>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <type>LongTextArea</type>
+    <visibleLines>4</visibleLines>
+</CustomField>
+

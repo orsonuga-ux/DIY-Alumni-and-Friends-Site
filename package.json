@@ -1,0 +1,13 @@
+{
+  "name": "diy-alumni-and-friends-site",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Salesforce Experience Cloud alumni portal solution scaffold for UChicago-aligned alumni and friends engagement.",
+  "scripts": {
+    "sf:deploy:check": "sf project deploy start --dry-run --source-dir force-app",
+    "sf:deploy": "sf project deploy start --source-dir force-app",
+    "sf:retrieve": "sf project retrieve start --source-dir force-app"
+  },
+  "devDependencies": {}
+}
+
