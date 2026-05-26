@@ -12,12 +12,14 @@ This file is the navigation layer for the portal project. Keep it short. Add lin
 | [04-brand-accessibility.md](04-brand-accessibility.md) | UChicago brand constraints, design tokens, accessibility expectations, and review checklist. | Design, frontend, content |
 | [05-contributor-workflow.md](05-contributor-workflow.md) | How contributors avoid overwrites, reduce context size, and document decisions. | Everyone |
 | [06-delivery-plan.md](06-delivery-plan.md) | Phased delivery plan, milestone gates, and acceptance criteria. | Delivery lead, product, engineering |
+| [07-technical-component-inventory.md](07-technical-component-inventory.md) | Living inventory of Experience Cloud components, descriptions, status, and dependencies. | Technical leads, Salesforce developers |
 
 ## Implementation Areas
 
 | Area | Path | Purpose |
 | --- | --- | --- |
 | Salesforce source | [../force-app](../force-app) | Salesforce DX metadata, Lightning Web Components, objects, fields, and permission sets. |
+| Technical component inventory | [07-technical-component-inventory.md](07-technical-component-inventory.md) | Required companion doc for component changes. |
 | Component contracts | [component-contracts](component-contracts) | Small, durable contracts for Experience Cloud components. |
 | Scratch org config | [../config/project-scratch-def.json](../config/project-scratch-def.json) | Starter Salesforce development org shape. |
 | Environment registry | [../config/environments.json](../config/environments.json) | Known sandbox and site URLs used for validation. |

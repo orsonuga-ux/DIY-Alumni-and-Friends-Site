@@ -16,7 +16,7 @@ The rule of thumb: read the smallest relevant file, change the smallest owned ar
 | Brand and accessibility | `docs/04-brand-accessibility.md` |
 | Delivery planning | `docs/06-delivery-plan.md` |
 | Contributor process | `docs/05-contributor-workflow.md` |
-| Lightning Web Components | `force-app/main/default/lwc/<component-name>` plus `docs/component-contracts/<component-name>.md` |
+| Lightning Web Components | `force-app/main/default/lwc/<component-name>`, `docs/07-technical-component-inventory.md`, and `docs/component-contracts/<component-name>.md` |
 | Salesforce content metadata | `force-app/main/default/objects/Portal_Content__c` and `docs/03-salesforce-content-model.md` |
 
 When implementation begins, create one folder per functional area and add a local `README.md` that describes ownership, dependencies, and test commands.
@@ -38,6 +38,13 @@ When implementation begins, create one folder per functional area and add a loca
 - Add new sections instead of rewriting broad documents unless the task is a planned rewrite.
 - For metadata work, separate object, field, permission, and component changes into distinct commits or change sets.
 - If a file has changed unexpectedly, assume another contributor made the change and preserve it.
+
+## Component Documentation Rule
+
+- Every Lightning Web Component must have an entry in `docs/07-technical-component-inventory.md`.
+- Any component behavior, public property, data dependency, deployment status, or page usage change must update the inventory in the same commit.
+- Components with page-level behavior or Salesforce data dependencies should also have a focused contract under `docs/component-contracts`.
+- Internal child components still need an inventory row, even when they are not exposed in Experience Builder.
 
 ## Recommended Task Brief
 

@@ -1,12 +1,10 @@
-# Local system files
-.DS_Store
-Thumbs.db
+# Local Salesforce CLI state
+.sf/
+.sfdx/
 
 # Dependencies and generated output
 node_modules/
 coverage/
-.sfdx/
-.sf/
 
 # Logs
 *.log
@@ -17,3 +15,8 @@ yarn-error.log*
 # Local environment files
 .env
 .env.*
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
