@@ -1,0 +1,35 @@
+<template>
+    <div class="navigation-shell">
+        <div class="utility-row" aria-label="University utility navigation">
+            <a href="https://www.uchicago.edu" target="_blank" rel="noopener">UChicago.edu</a>
+            <a href="/AlumniAndFriends/s/contact">Contact</a>
+            <a href="/AlumniAndFriends/s/directory">Directory</a>
+            <a class="search-link" href="/AlumniAndFriends/s/search">
+                <span aria-hidden="true">Search</span>
+            </a>
+        </div>
+
+        <div class="primary-row">
+            <button
+                class="menu-button"
+                type="button"
+                aria-controls="portal-navigation-menu"
+                aria-expanded={isMenuOpen}
+                onclick={toggleMenu}>
+                <span class="menu-icon" aria-hidden="true"></span>
+                <span>Menu</span>
+            </button>
+
+            <nav id="portal-navigation-menu" class={menuClass} aria-label="Alumni and Friends">
+                <a href="/AlumniAndFriends/s/" class="primary-link">Home</a>
+                <a href="/AlumniAndFriends/s/events" class="primary-link">Events</a>
+                <a href="/AlumniAndFriends/s/stories" class="primary-link">Stories</a>
+                <a href="/AlumniAndFriends/s/giving" class="primary-link">Giving</a>
+                <a href="/AlumniAndFriends/s/volunteer" class="primary-link">Volunteer</a>
+                <a href="/AlumniAndFriends/s/groups" class="primary-link">Groups</a>
+                <a href="/AlumniAndFriends/s/profile" class="primary-link">Profile</a>
+            </nav>
+        </div>
+    </div>
+</template>
+

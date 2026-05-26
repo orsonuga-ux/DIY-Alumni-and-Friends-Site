@@ -11,7 +11,8 @@ Any change to `force-app/main/default/lwc` must include an update to this docume
 | Component | Status | Exposed in Experience Builder | Short Description | Data Dependencies | Notes |
 | --- | --- | --- | --- | --- | --- |
 | `portalHomeShell` | Deployed to POC | Yes | Top-level alumni portal home page shell that composes the brand header and featured content regions. | Child components only; does not query records directly. | Place this on an Experience Cloud page to preview the modern home shell. |
-| `portalBrandHeader` | Deployed to POC | Yes | UChicago-aware portal header shell with brand link and primary portal navigation. | None. | Uses a placeholder brand mark until approved UChicago assets are added. |
+| `portalBrandHeader` | Deployed to POC | Yes | UChicago-aware identity header shell with University link and composed portal navigation. | Child component: `portalNavigation`. | Uses a placeholder brand mark until approved UChicago assets are added. |
+| `portalNavigation` | Deployed to POC | Yes | Separate UChicago-inspired utility and primary navigation component with desktop links and mobile menu behavior. | None. | Mimics the institutional navigation structure from `uchicago.edu` while using alumni portal links. |
 | `portalContentList` | Deployed to POC | Yes | Record-list section for featured announcements, stories, events, giving promotions, resources, and opportunities. | Planned: `Portal_Content__c`. Current: optional sample records. | Data wiring is intentionally deferred until object contracts and security are finalized. |
 | `portalContentCard` | Deployed to POC | No | Reusable presentation card for a single content item, including type, title, summary, image, and CTA. | Receives values from parent components. | Internal child component used by `portalContentList`. |
 
@@ -48,4 +49,3 @@ When a component changes, update:
 - Component contract under `docs/component-contracts` when public properties, data rules, or accessibility requirements change.
 - Local component `README.md` if the change affects contributor workflow.
 - Salesforce deployment status after deploying to POC, UAT, or production.
-

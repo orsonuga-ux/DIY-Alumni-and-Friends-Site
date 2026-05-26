@@ -20,4 +20,5 @@ Each component should declare:
 | `portalContentCard` | Reusable card for Salesforce-managed content records. |
 | `portalContentList` | Record-driven list of published portal content. |
 | `portalBrandHeader` | UChicago-aware header shell pending final brand asset approval. |
+| `portalNavigation` | UChicago-inspired utility and primary navigation for portal pages. |
 

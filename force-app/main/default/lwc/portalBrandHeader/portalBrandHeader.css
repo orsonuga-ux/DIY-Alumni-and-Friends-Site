@@ -8,8 +8,8 @@
     color: #ffffff;
     display: flex;
     gap: 1.5rem;
-    justify-content: space-between;
-    min-height: 4rem;
+    justify-content: center;
+    min-height: 4.5rem;
     padding: 0 1.5rem;
 }
 
@@ -31,31 +31,9 @@
     width: 1.75rem;
 }
 
-.portal-nav {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.portal-nav a {
-    color: inherit;
-    font-family: var(--portal-font-brand, Helvetica, Arial, sans-serif);
-    font-size: 0.875rem;
-    text-decoration: none;
-}
-
-.portal-nav a:focus,
-.portal-nav a:hover {
-    text-decoration: underline;
-    text-underline-offset: 0.25rem;
-}
-
 @media (max-width: 48rem) {
     .brand-header {
-        align-items: flex-start;
-        flex-direction: column;
-        padding-bottom: 1rem;
-        padding-top: 1rem;
+        justify-content: flex-start;
+        min-height: 4rem;
     }
 }
-
